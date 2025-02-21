@@ -1,3 +1,11 @@
+Getting the kubeconfig and talosconfig for this cluster can be done with terraform output -raw kubeconfig > <desired-path-and-filename> and terraform output -raw talosconfig > <desired-path-and-filename>
+
+To see the dashboard of the cluster afterwards:
+
+```
+talosctl --talosconfig <desired-path-and-filename> dashboard
+```
+
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
 
